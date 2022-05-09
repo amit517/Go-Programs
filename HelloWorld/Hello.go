@@ -1,39 +1,21 @@
 package main
 
-import "fmt"
-
-type Grades int
-
-const (
-	A Grades = iota
-	B
-	C
-	D
-	F
+import (
+	"fmt"
 )
 
 func main() {
-	var x = 2
+	/* var x [5]int
+	x[0] = 2
+	fmt.Printf("%d", x[0]) */
 
-	if x < 5 {
-		fmt.Println("x smaller")
-	} else {
-		fmt.Println("x grater")
+	x := [...]int{1, 2, 3, 4}
+
+	/* for i := 0; i < len(x); i++ {
+		fmt.Println("%d", x[i])
+	} */
+
+	for i, v := range x {
+		fmt.Println("ind %d, val %d", i, v)
 	}
-
-	for i := 0; i < 10; i++ {
-		fmt.Printf("x Hello")
-	}
-
-	switch x {
-	case 1:
-		{
-
-		}
-	case 2:
-		{
-
-		}
-	}
-
 }
