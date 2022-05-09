@@ -16,4 +16,12 @@ func main() {
 	p1.age = 26
 
 	fmt.Println(p1.name)
+
+	p2 := new(Person)
+
+	/* 	p2.name = "Humane"
+	   	p2.age = 0 */
+	fmt.Println(p2)
+
+	//p3 :=Person(name:"joe",age:26)
 }
